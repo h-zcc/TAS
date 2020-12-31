@@ -12,7 +12,7 @@
                             <span class="card-title" align="center">${info}</span>
                         </div>
                         <div class="card-action">
-                            <a href="/login" class="white-text lighten-3" align="center">重新登录<i class="material-icons right">arrow_forward</i></a>
+                            <a href="${pageContext.request.contextPath}/login" class="white-text lighten-3" align="center">重新登录<i class="material-icons right">arrow_forward</i></a>
                         </div>
                     </div>
                 </div>

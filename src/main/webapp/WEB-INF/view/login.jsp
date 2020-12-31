@@ -65,17 +65,17 @@
             <div class="row">
                 <div class="col s12" align="center">
                     <i class="material-icons prefix">train</i>
-                    <a href="/index">游客登录</a>
+                    <a href="${pageContext.request.contextPath}/index">游客登录</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="material-icons prefix">lock_outline</i>
-                    <a href="/user/password-reset">重置密码</a>
+                    <a href="${pageContext.request.contextPath}/user/password-reset">重置密码</a>
                 </div>
             </div>
         </form>
     </div>
     <div class="col s0 m4 l4"></div>
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/materialize.js"></script>
 </body>
 </html>
