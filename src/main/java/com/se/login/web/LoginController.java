@@ -44,8 +44,9 @@ public class LoginController {
      *
      * @return 登录界面逻辑视图名
      */
-    @RequestMapping(value={"/", "/login"})
+    @RequestMapping("/login")
     public String loginPage() {
+        System.out.println("login");
         return "login";
     }
 
