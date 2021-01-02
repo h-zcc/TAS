@@ -194,12 +194,12 @@ insert into teach values("300400", "1");
 insert into teach values("300500", "2");
 insert into teach values("300600", "3");
 
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (1, '123change', '123change', '2017-12-16', '2017-12-07', 100, '4', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (2, '4774', '黄海波 v 好', '2017-12-17', '2017-12-19', 100, '', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (3, 'hbybqwe', 'hbqwyeyy', '2017-12-17', '2017-12-27', 100, '', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (5, 'test5', 'test5', '2017-12-17', '2017-12-19', 100, '', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (6, 'test6', 'taehbhb', '2017-12-21', '2018-01-17', 100, '', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
-INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (7, 'test7', 'hbqhwbegv', '2017-12-21', '2017-12-12', 100, '', 'Ex100', '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (1, '123change', '123change', '2017-12-16', '2017-12-07', 100, '4', 1, '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (2, '4774', '黄海波 v 好', '2017-12-17', '2017-12-19', 100, '', 1, '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (3, 'hbybqwe', 'hbqwyeyy', '2017-12-17', '2017-12-27', 100, '', 1, '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (5, 'test5', 'test5', '2017-12-17', '2017-12-19', 100, '', 1, '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (6, 'test6', 'taehbhb', '2017-12-21', '2018-01-17', 100, '', 1, '春学期', '周一3、4', '紫金港-东1-104');
+INSERT INTO tas.homework (id, title, content, create_date, ddl_date, score, attachment, course_id, semester, time, place) VALUES (7, 'test7', 'hbqhwbegv', '2017-12-21', '2017-12-12', 100, '', 1, '春学期', '周一3、4', '紫金港-东1-104');
 
 INSERT INTO tas.online_test (id, course_id, ddl_date, score, title) VALUES (2, 1, '2018-01-16 16:00:00', 100, 'test1');
 

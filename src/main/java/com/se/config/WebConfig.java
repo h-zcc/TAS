@@ -26,7 +26,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/image/**").addResourceLocations("file:" + File.ROOT_PATH + "/image/");
+        //registry.addResourceHandler("/image/**").addResourceLocations("file:" + File.ROOT_PATH + "/image/");
+        registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/video/**").addResourceLocations("file:" + File.ROOT_PATH + "/video/");
         registry.addResourceHandler("/material/**").addResourceLocations("file:" + File.ROOT_PATH + "/material/");
     }

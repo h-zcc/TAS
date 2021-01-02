@@ -46,7 +46,6 @@ public class LoginController {
      */
     @RequestMapping("/login")
     public String loginPage() {
-        System.out.println("login");
         return "login";
     }
 

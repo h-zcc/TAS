@@ -56,8 +56,11 @@ public class InfoService {
         String realImageLocation = rootPath + imageLocation;
         File file = new File(realImageLocation);
 
-        if (image == null || image.isEmpty())
+        if (image == null || image.isEmpty()){
+            System.out.println(user.getImageLocation());
             return user.getImageLocation();
+
+        }
 
         try {
             image.transferTo(file);
