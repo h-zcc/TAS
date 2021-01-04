@@ -30,8 +30,12 @@
     <link href="/css/css/bootstrap.min.css" rel="stylesheet">
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
 
+    <link href="/css/css/plugins/iCheck/custom.css" rel="stylesheet">
+
     <link href="/css/css/animate.css" rel="stylesheet">
     <link href="/css/css/style.css" rel="stylesheet">
+    <link href="/css/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
 
     <!-- Mainly scripts-->
     <script src="/js/js/jquery-2.1.1.js"></script>
@@ -42,6 +46,9 @@
     <!-- Custom and plugin javascript-->
     <script src="/js/js/inspinia.js"></script>
     <script src="/js/js/plugins/pace/pace.min.js"></script>
+    <script src="/js/js/plugins/iCheck/icheck.min.js"></script>
+    <!-- Data picker -->
+    <script src="/js/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
     <tmpl:block name="script" />
 </head>

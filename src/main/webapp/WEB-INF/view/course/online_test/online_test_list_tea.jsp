@@ -33,6 +33,7 @@
                     </tbody>
                 </table>
                 <div class="col s0 m1 l1"></div>
+                <a href="/course/${courseId}/onlineTest/to-create" class="btn btn-outline btn-primary">创建测试</a>
             </div>
         </div>
     </div>

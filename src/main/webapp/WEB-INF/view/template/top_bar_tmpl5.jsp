@@ -31,7 +31,11 @@
                     </li>
                     <li>
                         <a href="/course/${courseId}/resource/material"><i class="fa fa-file-text"></i> <span
-                                class="nav-label">资料下载</span></a>
+                                class="nav-label">资料管理</span></a>
+                    </li>
+                    <li>
+                        <a href="/course/${courseId}/resource/video/to-upload"><i class="fa fa-youtube-play"></i> <span
+                                class="nav-label">视频上传</span></a>
                     </li>
                     <li>
                         <a href="/course/${courseId}/resource/video/watch"><i class="fa fa-youtube-play"></i> <span

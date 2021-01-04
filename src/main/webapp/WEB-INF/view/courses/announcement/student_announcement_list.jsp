@@ -59,29 +59,6 @@
                 </div>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <c:forEach var="announcement" items="${announcements}">
-                <div class="col-lg-12">
-                    <div class="ibox">
-                        <div class="ibox-content" style="padding:2% 10%;">
-                            <a href="/course/${courseId}/announcement/list" class="btn-link">
-                                <h2>
-                                        ${announcement.title}
-                                </h2>
-                            </a>
-                            <div class="small m-b-xs">
-                                <span class="text-muted"><i class="fa fa-clock-o"></i> ${announcement.date}</span>
-                            </div>
-                            <p>
-                                    ${announcement.content}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </c:forEach>
-        </div>
-    -->
     </div>
 <!--
     <div class="container">

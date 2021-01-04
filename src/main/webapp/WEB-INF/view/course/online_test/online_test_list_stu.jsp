@@ -7,6 +7,59 @@
 
 </tmpl:overwrite>
 <tmpl:overwrite name="content">
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>在线测试</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/index">首页 Home</a>
+                </li>
+                <li class="active">
+                    <strong>在线测试</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-box">
+                    <a href="#">
+                        <div class="col-sm-5">
+                            <h2><strong>测试名称</strong></h2>
+                        </div>
+                        <div class="col-sm-5">
+                            <h2><strong>截止时间</strong></h2>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+                <c:forEach var="onlineTest" items="${onlineTests}">
+                    <div class="contact-box">
+                        <a href="#">
+                            <div class="col-sm-5">
+                                <h3><strong>${onlineTest.title}</strong></h3>
+                            </div>
+                            <div class="col-sm-5">
+                                <h3><strong>${onlineTest.ddl_date}</strong></h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="/course/${onlineTest.course_id}/onlineTest/${onlineTest.id}">
+                                    <button type="button" class="btn btn-outline btn-primary">进入测试</button>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+    </div>
+<!--
     <div class="container">
         <div class="row">
             <div class="col s0 m1 l1"></div>
@@ -35,6 +88,6 @@
                 <div class="col s0 m1 l1"></div>
             </div>
         </div>
-    </div>
+    </div>-->
 </tmpl:overwrite>
 <jsp:include page="../../template/student_course_tmpl.jsp"/>

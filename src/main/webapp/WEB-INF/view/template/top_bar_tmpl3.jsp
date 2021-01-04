@@ -23,37 +23,27 @@
                         </div>
                     </li>
                     <li>
-                        <a href="/course/${courseId}"><i class="fa fa-bell"></i> <span class="nav-label">课程公告</span>
+                        <a href="/user/info"><i class="fa fa-user"></i> <span class="nav-label">个人信息</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/course/${courseId}/introduction"><i class="fa fa-info"></i> <span class="nav-label">课程简介</span></a>
+                        <a href="/user/password-modify"><i class="fa fa-unlock-alt"></i> <span class="nav-label">修改密码</span></a>
                     </li>
                     <li>
-                        <a href="/course/${courseId}/resource/material"><i class="fa fa-file-text"></i> <span
-                                class="nav-label">资料下载</span></a>
+                        <a href="/user/email"><i class="fa fa-envelope"></i> <span
+                                class="nav-label">绑定邮箱</span></a>
                     </li>
+                    <!--
                     <li>
-                        <a href="/course/${courseId}/resource/video/watch"><i class="fa fa-youtube-play"></i> <span
-                                class="nav-label">视频观看 </span></a>
+                        <a href="/notice"><i class="fa fa-bell"></i> <span
+                                class="nav-label">消息中心 </span></a>
                     </li>
-                    <li>
-                        <a href="/course/${courseId}/onlineTest/list"><i class="fa fa-pencil-square-o"></i> <span
-                                class="nav-label">在线测试</span> </a>
-                    </li>
-                    <li>
-                        <a href="/course/${courseId}/homework/list"><i class="fa fa-laptop"></i> <span
-                                class="nav-label">实验作业</span></a>
-                    </li>
-                    <li>
-                        <a href="/course/${courseId}/comment"><i class="fa fa-comments-o"></i> <span class="nav-label">留言板</span></a>
-                    </li>
+    -->
                 </ul>
 
             </div>
         </nav>
         <tmpl:block name="content1"/>
     </div>
-
 </tmpl:overwrite>
 <jsp:include page="base.jsp"/>
