@@ -35,12 +35,6 @@
                             <br>
                             <h4>作业内容：${homework.content}</h4><br>
                             <h4>满分：${homework.score}</h4><br>
-                            <c:if test="${uploadHomework.get_score == -1}">
-                                <h4>当前分数：未打分</h4><br>
-                            </c:if>
-                            <c:if test="${uploadHomework.get_score != -1}">
-                                <h4>当前分数：${uploadHomework.get_score}</h4><br>
-                            </c:if>
                             <div>
                                 <h4>作业要求:</h4>
                                 <a href="/course/homework/download?file_id=${attachment.file_id}">

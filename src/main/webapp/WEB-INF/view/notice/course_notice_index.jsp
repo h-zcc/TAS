@@ -6,46 +6,43 @@
 <%@ taglib prefix="tmpl" uri="/WEB-INF/mytag.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <tmpl:overwrite name="content">
-    <div class="container">
-    <div class="row">
-        <div class="col s0 m1 l1"></div>
-        <div class="col s12 m9 l9">
-            <div>
-                <div class="container page-container">
-                    <div>
-                        <div>
-                            <div id="tab-notification" class="col s12">
-                                <div class="row">
-                                    <br>
-                                    <h4>消息中心</h4>
-                                    <h5>Notice</h5>
-                                    <div class="divider row"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s12">
-                                        <ul class="collapsible" data-collapsible="expandable">
-                                            <c:forEach var="typeNotices" items="${classifiedNotices}" varStatus="status">
-                                                <li>
-                                                    <div class="collapsible-header active"><i class="material-icons">filter_${status.index + 1}</i>${noticeTypes[status.index]}</div>
-                                                    <div class="collapsible-body">
-                                                        <c:forEach var="notice" items="${typeNotices}">
-                                                            <a href="${"/course/" += notice.courseId += noticeURLs[status.index] += "?notice_id=" += notice.id}">${notice.message}</a>
-                                                            <br/>
-                                                        </c:forEach>
-                                                    </div>
-                                                </li>
-                                            </c:forEach>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>消息中心</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/index">首页 Home</a>
+                </li>
+                <li class="active">
+                    <strong>消息中心</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <c:forEach var="typeNotices" items="${classifiedNotices}" varStatus="status">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>${noticeTypes[status.index]}</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <ul class="side-nav fixed leftside-navigation">
+                                <c:forEach var="notice" items="${typeNotices}">
+                                    <a href="${"/course/" += notice.courseId += noticeURLs[status.index] += "?notice_id=" += notice.id}">${notice.message}</a>
+                                    <br/>
+                                </c:forEach>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            </c:forEach>
         </div>
-        <div class="col s0 m2 l2"></div>
-    </div>
     </div>
 </tmpl:overwrite>
 <jsp:include page="../template/notice_center_tmpl.jsp"/>

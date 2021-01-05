@@ -35,10 +35,10 @@
                                 <br>
                                 <h4>作业内容：${homework.content}</h4><br>
                                 <h4>满分：${homework.score}</h4><br>
-                                <c:if test="${uploadHomework.get_score == -1}">
+                                <c:if test="${uploadHomework.get_score < 0 || uploadHomework == null}">
                                     <h4>当前分数：未打分</h4><br>
                                 </c:if>
-                                <c:if test="${uploadHomework.get_score != -1}">
+                                <c:if test="${uploadHomework.get_score >= 0}">
                                         <h4>当前分数：${uploadHomework.get_score}</h4><br>
                                 </c:if>
                                 <div>

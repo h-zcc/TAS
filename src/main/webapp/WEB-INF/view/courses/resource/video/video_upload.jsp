@@ -34,6 +34,24 @@
     </script>
 </tmpl:overwrite>
 <tmpl:overwrite name="content">
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>视频上传</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/index">首页 Home</a>
+                </li>
+                <li class="active">
+                    <strong>视频上传</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+
     <div class="row">
         <div class="col s1 m1 l1"></div>
         <div class="col s10 m9 l9">

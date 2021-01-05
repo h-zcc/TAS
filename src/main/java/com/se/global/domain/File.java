@@ -16,7 +16,7 @@ public class File {
     private Date date;
     private int courseId;
     private String userId;
-    public static String ROOT_PATH = "/Users/yusen/Desktop/files";
+    public static String ROOT_PATH = "/Users/zcc/SEM2020/files";
 
     public File() {
 

@@ -7,6 +7,125 @@
 
 </tmpl:overwrite>
 <tmpl:overwrite name="content">
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>测试详情</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/index">首页 Home</a>
+                </li>
+                <li>
+                    <a href="/course/${courseId}/onlineTest/list">在线测试</a>
+                </li>
+                <li class="active">
+                    <strong>测试详情</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-box">
+                    <div class="col-sm-8">
+                        <h2><strong>${onlineTest.title}</strong></h2>
+                        <h3><i class="fa fa-clock-o"></i> 截止日期：${onlineTest.ddl_date}</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <c:forEach var="choiceQuestion" items="${choiceQuestions}" varStatus="status">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-box">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>第${status.index+1}题.【${choiceQuestion.score}分】${choiceQuestion.title}</h3>
+                                <address style="margin-bottom: 0;">
+                                    <form action="#">
+                                        <div class="i-checks">
+                                            <label>
+                                                <input type="radio" value="option1" name="${status.index}">
+                                                <i style="margin-left: 10px;"></i> ${choiceQuestion.choice_a}
+                                            </label>
+                                        </div>
+                                        <div class="i-checks">
+                                            <label>
+                                                <input type="radio" value="option1" name="${status.index}">
+                                                <i style="margin-left: 10px;"></i> ${choiceQuestion.choice_b}
+                                            </label>
+                                        </div>
+                                        <div class="i-checks">
+                                            <label>
+                                                <input type="radio" value="option1" name="${status.index}">
+                                                <i style="margin-left: 10px;"></i> ${choiceQuestion.choice_c}
+                                            </label>
+                                        </div>
+                                        <div class="i-checks">
+                                            <label>
+                                                <input type="radio" value="option1" name="${status.index}">
+                                                <i style="margin-left: 10px;"></i> ${choiceQuestion.choice_d}
+                                            </label>
+                                        </div>
+                                    </form>
+                                    <br>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <button class="btn btn-primary btn-block" type="submit" name="action">提交答案</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
+
+        <c:forEach var="fillQuestion" items="${fillQuestions}" varStatus="status">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-box">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>第${status.index+1}题.【${fillQuestion.score}分】${fillQuestion.title}</h3>
+                                <address>
+                                    <div class="form-group"><label class="col-lg-1 control-label">回答内容</label>
+
+                                        <div class="col-lg-11"><input type="text" placeholder="请填写回答内容"
+                                                                      class="form-control">
+
+                                        </div>
+                                    </div>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="col-sm-1">
+                                <button class="btn btn-primary btn-block" type="submit">提交答案</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+    <!--
     <div class="container">
         <div class="row">
             <div class="col s0 m1 l1"></div>
@@ -69,8 +188,11 @@
                     </div>
                 </form>
                 <div class="col s0 m1 l1"></div>
+                <a href="/course/${courseId}/onlineTest/${onlineTestId}/rate"
+                   class="btn btn-outline btn-primary">测试情况</a>
+
             </div>
         </div>
-    </div>
-</tmpl:overwrite>..
+    </div>-->
+</tmpl:overwrite>
 <jsp:include page="../../template/teacher_course_tmpl.jsp"/>

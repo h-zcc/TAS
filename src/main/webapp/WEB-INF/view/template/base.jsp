@@ -22,7 +22,7 @@
 
     <script type="text/javascript" src="/js/materialize.js"></script>
 
-    <script type="text/javascript" src="/js/plugins.js"></script>
+    <!--<script type="text/javascript" src="/js/plugins.js"></script>-->
 
     <script type="text/javascript" src="/js/init.js"></script>
 
@@ -53,11 +53,6 @@
     <tmpl:block name="script" />
 </head>
 <body>
-<div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
 <tmpl:block name="body" />
 </body>
 </html>

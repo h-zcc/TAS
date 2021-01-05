@@ -54,7 +54,8 @@ public class HomeworkController {
     }
 
     @RequestMapping("/course/{courseId}/homework/to-assign")
-    public String homeworkAssignPage(@PathVariable int courseId, Model model) {
+    public String homeworkAssignPage(@PathVariable int courseId, Model model, HttpSession session) {
+        ModelService.setNoticeTotalNum(model, session);
         model.addAttribute("course_id", courseId);
         return "course/homework/assign_homework";
     }
