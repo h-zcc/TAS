@@ -4,6 +4,105 @@
 <%@ taglib prefix="tmpl" uri="/WEB-INF/mytag.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <tmpl:overwrite name="content">
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>学生 & 课程</h5>
+            </div>
+            <div class="ibox-content">
+                <p style="color: red">${info}</p>
+                <form class="form-horizontal" method="post"
+                      action="/admin/relation/student/add/single">
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">学号</label>
+                        <div class="col-lg-11">
+                            <input type="text" class="form-control" id="id"
+                                   name="id" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">课程代码</label>
+                        <div class="col-lg-11">
+                            <input id="name" name="code" type="text"
+                                   class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">学期</label>
+                        <div class="col-lg-11">
+                            <input id="college" name="semester" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">时间</label>
+                        <div class="col-lg-11">
+                            <input id="major" name="time" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">地点</label>
+                        <div class="col-lg-11">
+                            <input id="grade" name="place" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-1 col-lg-10">
+                            <button class="btn btn-outline btn-primary" type="submit" name="action">导入</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>教师 & 课程</h5>
+            </div>
+            <div class="ibox-content">
+                <form class="form-horizontal" method="post"
+                      action="/admin/relation/teacher/add/single">
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">工号</label>
+                        <div class="col-lg-11">
+                            <input type="text" class="form-control" id="id"
+                                   name="id" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">课程代码</label>
+                        <div class="col-lg-11">
+                            <input id="name" name="code" type="text"
+                                   class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">学期</label>
+                        <div class="col-lg-11">
+                            <input id="college" name="semester" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">时间</label>
+                        <div class="col-lg-11">
+                            <input id="major" name="time" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">地点</label>
+                        <div class="col-lg-11">
+                            <input id="grade" name="place" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-1 col-lg-10">
+                            <button class="btn btn-outline btn-primary" type="submit" name="action">导入</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--
     <div class="container">
         <div class="row">
             <div class="col s1 m1 l1"></div>
@@ -191,6 +290,6 @@
             </div>
             <div class="col s1 m2 l2"></div>
         </div>
-    </div>
+    </div>-->
 </tmpl:overwrite>
 <jsp:include page="../template/admin_tmpl.jsp"/>

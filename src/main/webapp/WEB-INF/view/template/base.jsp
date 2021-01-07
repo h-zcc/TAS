@@ -31,6 +31,8 @@
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="/css/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/css/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
 
     <link href="/css/css/animate.css" rel="stylesheet">
     <link href="/css/css/style.css" rel="stylesheet">
@@ -42,6 +44,8 @@
     <script src="/js/js/bootstrap.min.js"></script>
     <script src="/js/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="/js/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
 
     <!-- Custom and plugin javascript-->
     <script src="/js/js/inspinia.js"></script>

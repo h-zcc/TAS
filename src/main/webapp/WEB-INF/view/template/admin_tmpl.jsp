@@ -1,61 +1,35 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="tmpl" uri="/WEB-INF/mytag.tld" %>
 <tmpl:overwrite name="content1">
-    <div id="main">
-        <div class="wrapper">
-            <aside id="left-sidebar-nav">
-                <ul id="slide-out" class="side-nav fixed leftside-navigation">
+    <div class="gray-bg" id="page-wrapper">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"
+                       style="height: 30px;display: flex;align-items: center"><i
+                            class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" action="search_results.html"
+                          style="margin: 0;padding: 0">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for something..." class="form-control"
+                                   name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
                     <li>
-                        <a href="/admin/student_manage">
-                            <i class="material-icons left">
-                                people
-                            </i>
-                            <i class="material-icons right">
-                                chevron_right
-                            </i>
-                            学生管理
-                        </a>
+                        <span class="m-r-sm text-muted welcome-message">欢迎使用线上教学辅助系统</span>
                     </li>
                     <li>
-                        <a href="/admin/teacher_manage">
-                            <i class="material-icons left">
-                                people
-                            </i>
-                            <i class="material-icons right">
-                                chevron_right
-                            </i>
-                            教师管理
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/admin/course_manage">
-                            <i class="material-icons left">
-                                import_contacts
-                            </i>
-                            <i class="material-icons right">
-                                chevron_right
-                            </i>
-                            课程管理
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/admin/relation_manage">
-                            <i class="material-icons left">
-                                insert_link
-                            </i>
-                            <i class="material-icons right">
-                                chevron_right
-                            </i>
-                            关联管理
+                        <a href="/logout">
+                            <i class="fa fa-sign-out"></i> Log out
                         </a>
                     </li>
                 </ul>
-                <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating waves-effect waves-light hide-on-large-only">
-                    <i class="material-icons">menu</i>
-                </a>
-            </aside>
-            <tmpl:block name="content"/>
+
+            </nav>
         </div>
+        <tmpl:block name="content"/>
     </div>
 </tmpl:overwrite>
-<jsp:include page="top_bar_tmpl1.jsp"/>
+<jsp:include page="top_bar_tmpl7.jsp"/>
